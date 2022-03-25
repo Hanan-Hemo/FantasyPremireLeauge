@@ -33,6 +33,7 @@ body {
 }
 .navbar .container {
   display: flex;
+  margin-right: 0;
   place-content: space-between;
 }
 .navbar .mobile-menu {
@@ -205,7 +206,7 @@ section.about-me div.container img {
   margin-top: 3px;
 }
 .Q-and-A details {
-  background: #7e00bd;
+  background: var(--primary-color);
   padding: 10px 20px;
   border-radius: 7px;
   margin-top: 20px;
@@ -214,6 +215,9 @@ section.about-me div.container img {
   letter-spacing: 1px;
   cursor: pointer;
   color: white;
+}
+.Q-and-A details span {
+  color: #F5567F;
 }
 .Q-and-A details summary {
   outline: none;
@@ -248,7 +252,7 @@ label {
   margin-bottom: 0.3em;
 }
 
-input {
+input, textarea {
   width: 500px;
   max-width: 20em;
   padding: 0.7em;
@@ -256,7 +260,10 @@ input {
   border-radius: 0.4em;
   border: 1px solid #F5567F;
   box-sizing: border-box;
-  text-align: center;
+}
+
+textarea {
+  text-align: left;
 }
 
 input[type=submit] {
@@ -434,7 +441,7 @@ nav li a:hover {
     position: relative;
     text-align: center;
     margin-left: 0;
-    padding-bottom: 2em;
+    padding-bottom: 200px;
     padding-right: 0;
     height: 350px;
   }
@@ -453,6 +460,7 @@ nav li a:hover {
     margin-right: 0;
     margin-left: 23em;
     -moz-box-align: center;
+    justify-content: center;
   }
   .contact-section .send-message-cta {
     margin-left: 4em;

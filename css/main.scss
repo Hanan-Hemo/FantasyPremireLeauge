@@ -51,6 +51,7 @@ body {
     //styling the container class
     .container {
         display: flex;
+        margin-right: 0;
         place-content: space-between;
        
      
@@ -252,6 +253,7 @@ section.about-me {
      .faqs{
         padding: 0px 20px 20px;
         background: white
+     
      }
      
      ::-webkit-details-marker{
@@ -260,7 +262,7 @@ section.about-me {
      }
      
      details{
-        background: #7e00bd;
+        background: var(--primary-color);
         padding: 10px 20px;
         border-radius: 7px;
         margin-top: 20px;
@@ -269,6 +271,9 @@ section.about-me {
         letter-spacing: 1px;
         cursor: pointer;
         color: white;
+        span{
+            color: #F5567F;
+        }
        
      }
     
@@ -314,7 +319,7 @@ label {
     margin-bottom: .3em;
 }
 //styling the contact's input box 
-input {
+input,textarea {
     
     width: 500px;
     max-width: 20em;
@@ -323,7 +328,11 @@ input {
     border-radius: .4em;
     border: 1px solid #F5567F;
     box-sizing: border-box;
-    text-align: center;
+    
+}
+textarea{
+    text-align: left;
+    
 }
 //styling the submit button
 input[type="submit"] {
@@ -544,7 +553,7 @@ nav {
         position:relative;
         text-align: center;
         margin-left: 0;
-        padding-bottom: 2em;
+        padding-bottom: 200px;
         padding-right: 0;
         height: 350px;
 
@@ -565,10 +574,12 @@ nav {
             margin-right: 0;
             margin-left: 23em;
             -moz-box-align: center;
+            justify-content: center;
         }
         .send-message-cta{
             margin-left: 4em;
             text-align: center;
+       
         }
         
 
